@@ -173,6 +173,32 @@
                 gap: 20px;
             }
         }
+
+        /* Estilos para las imágenes y el texto debajo de los iconos */
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .image-section img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .image-section p {
+            font-size: 18px;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            margin-bottom: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -183,11 +209,9 @@
             <source src="20240922_011313_0001.mp4" type="video/mp4">
             Tu navegador no soporta la reproducción de video.
         </video>
-        
 
         <!-- Barra de navegación con menú de hamburguesa -->
         <nav>
-        
             <div class="hamburger" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
@@ -219,7 +243,14 @@
         </div>
     </div>
 
-    <!-- Sección de contenido adicional -->
+    <!-- Sección de imágenes redondeadas con texto -->
+    <div class="image-section">
+        <img src="https://via.placeholder.com/300" alt="Imagen 1">
+        <p>Este es un texto breve debajo de la primera imagen. Puedes personalizar este texto para describir lo que quieras.</p>
+        <img src="https://via.placeholder.com/300" alt="Imagen 2">
+        <p>Este es otro texto breve debajo de la segunda imagen. Añade más detalles o información relevante aquí.</p>
+    </div>
+
     <div class="content">
         <h1>Bienvenido a nuestra página</h1>
         <p>Esta es una página con un video de portada, un logo incrustado y un menú de hamburguesa.</p>
